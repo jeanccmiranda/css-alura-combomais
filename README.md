@@ -4,12 +4,12 @@ A landing page foi projetada para desktop, celulares e Ipad Mini.
 
 Nesse exercício pratiquei :
 
-HTML BÁSICO:
+HTML:
 *Tags semânticas
 *Listas 
 *Classes
 
-CSS BÁSICO:
+CSS:
 *Variáveis
 *Flex
 *Grid
