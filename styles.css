@@ -1,0 +1,263 @@
+ :root{
+    --branco-principal: #ffffff;
+    --branco-secundario: #F9F9F9;
+    --cinza: #c0c0c0;
+    --azul: #167BF7;
+
+ }
+
+ .body{
+    
+    color: var(--branco-secundario);
+    background-color: #00030C;
+ }
+
+.combo-mais{
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 160px;
+    font-family: 'Inter', sans-serif;
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90vw;
+    height: 680px;
+}
+ .container--grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 250px;
+    width: 80vw;
+ }
+
+ .container--centered{
+    font-family: 'Inter', sans-serif;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+ }
+
+ .container--flex-start{
+    font-family: 'Inter', sans-serif;
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+ }
+
+ .combo-mais__header{
+    color: var(--branco-principal);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 22px;
+
+ }
+
+ .combo-mais__img{
+    width: 348px;
+    height: 100px;
+    margin-bottom: 54px;
+ }
+
+.combo-mais__button{
+    margin-bottom: 16px;
+}
+ .button--blue{
+    background-color: var(--azul);
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    width: 80%;
+ }
+
+ .button--blue:hover{
+   font-size: 20px;
+   background-color: #046be9;
+ }
+
+ .button--transparent{
+    background-color: transparent;
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+    width: 80%;
+    border: 1px solid #ffffff;
+
+ }
+
+ .button--transparent:hover{
+   font-size: 20px;
+ }
+
+ .combo-mais__disclaimer{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--cinza);
+    text-align: center;
+ }
+
+ .section-one{
+    font-family: 'Inter', sans-serif;
+ }
+ .section__img{
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+ }
+
+ .header{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--branco-principal);
+    margin-bottom: 8px;
+    text-align: left;
+    
+ }
+
+ .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 80%;
+    color: var(--branco-secundario);
+    opacity: 0.8;
+    text-align: left;
+ }
+
+ .blue-button--small{
+    background-color: var(--azul);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+ }
+
+ .section-four{
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 0 auto 160px;
+    width: 80vw;
+ }
+
+ .section-four__list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+ }
+
+ .section-four__p{
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 32px;
+    height: 38px;
+ }
+
+
+ .footer{
+   width: 90vw;
+   margin: 0 auto 100px;
+ }
+ .nav-bar{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+ }
+
+ .nav-bar__list{
+   display: flex;
+   flex-direction: row;
+   gap: 16px;
+ }
+
+ .nav-bar__li{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+ }
+
+ .nav-bar__li:hover{
+   color: var(--azul);
+ }
+
+ .footer__text{
+   text-align: center;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   color: var(--cinza);
+ }
+
+ @media screen and (max-width: 820px){
+   .container--grid, .combo-mais, .container--centered, .section-four__list, .nav-bar__list{
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      justify-self: center;
+      width: 100vw;
+      padding: 32px;
+      box-sizing: border-box;
+
+   }
+   .combo-mais{
+      height: auto;
+   }
+   .container--centered{
+      padding-top: 250px;
+   }
+   .header{
+      font-size: 3em;
+      align-self: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   .text{
+      font-size: 1em;
+      align-self: center;
+      justify-content: center;
+   }
+
+   .blue-button--small{
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 2em;
+   }
+
+   .footer__logo{
+      width: 25vw;
+   }
+   .nav-bar__list{
+      gap: 32px;
+   }
+   .nav-bar__link{
+      font-size: 1.5em;
+   }
+ }
+
+ 
